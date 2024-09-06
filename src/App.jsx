@@ -6,12 +6,14 @@ import AddAlbum from "./pages/AddAlbum";
 import ListAlbum from "./pages/ListAlbum";
 import ListSong from "./pages/ListSong";
 import SibeBar from "./components/SibeBar";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <div className="flex items-center min-h-screen">
       <SibeBar />
       <div className="flex-1 h-screen overflow-y-scroll bg-[#f3fff7]">
+        <Navbar />
         <div className="pt-8 pl-5 sm:pt-12 sm:pl-12">
           <Routes>
             <Route path="/add-song" element={<AddSong />} />
